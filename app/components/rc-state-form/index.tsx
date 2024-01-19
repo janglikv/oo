@@ -14,9 +14,8 @@ export default function Form({ children, element, ...props }: RcStateFormProps) 
 }
 
 Form.Item = function FormItem({ children, name, label }: FormItemProps) {
-    console.log(`${name} render`);
     const formItemProps = useFormItemProps(name);
-    const inputComp = cloneElement(children, { ...formItemProps });
+    const inputComp = children && cloneElement(children, { ...formItemProps });
     if (label) {
         return (
             <label>

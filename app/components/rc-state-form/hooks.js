@@ -4,7 +4,7 @@ import { get } from "./utils";
 
 export function useFormItemProps(name) {
     const value = store.useSelector((state) => get(state, name)?.value);
-    const ctx = store.useContext();
+    const actions = store.useActions();
 
     const onChange = useCallback(
         (value) => {
@@ -14,14 +14,9 @@ export function useFormItemProps(name) {
             if ("target" in value) {
                 value = value.target.value;
             }
-            ctx.setState((state) => {
-                return {
-                    ...state,
-                    [name]: { ...state[name], value },
-                };
-            });
+            actions.setValue(name, value);
         },
-        [ctx, name]
+        [actions, name]
     );
 
     return { name, ...(name ? { value, onChange } : {}) };

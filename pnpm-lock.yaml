@@ -30,8 +30,8 @@ dependencies:
     specifier: ^6.3.0
     version: 6.3.0
   rc-state:
-    specifier: ^1.3.1
-    version: 1.3.1(react@18.2.0)
+    specifier: ^1.3.2
+    version: 1.3.2(react@18.2.0)
   react:
     specifier: ^18.2.0
     version: 18.2.0
@@ -4902,8 +4902,8 @@ packages:
       iconv-lite: 0.4.24
       unpipe: 1.0.0
 
-  /rc-state@1.3.1(react@18.2.0):
-    resolution: {integrity: sha512-zV9WngoRKkK8HrH+f+zrw1b89qmh0Wu+vC5nBlluNvTS1rA5qVortTxkLif+OMYo9ZWwaFYbbIace/aJ7tDv7Q==}
+  /rc-state@1.3.2(react@18.2.0):
+    resolution: {integrity: sha512-SqUHGPfHooUQjdPZ2gJE7bKkPmNDDKznkAyRPVCp2Cr3xMY9kwBHtdgYfQMyPZx3RqtCbsNZJBLlcK5DM722BA==}
     engines: {node: '>=10'}
     peerDependencies:
       react: '>=16'

@@ -1,6 +1,6 @@
 import { useLoaderData } from "@remix-run/react";
-import { userCookie } from "../cookie";
-import Form from "../components/form";
+import { userCookie } from "../servers/cookie";
+import LoginForm from "../modules/login-form";
 
 export const meta = () => {
     return [{ title: "首页 | Home" }];
@@ -19,15 +19,7 @@ export default function Index() {
     return (
         <div>
             <div>o.o</div>
-            <Form method="post" action="/api/login">
-                <Form.Item name="username">
-                    <input type="text" />
-                </Form.Item>
-                <Form.Item name="password">
-                    <input type="text" />
-                </Form.Item>
-                <button type="submit">提交</button>
-            </Form>
+            <LoginForm />
         </div>
     );
 }

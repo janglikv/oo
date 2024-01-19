@@ -7,15 +7,15 @@ export type FormInstance = {
 };
 
 export type FormProps = {
-    form: FormInstance;
-    element: any;
+    form?: FormInstance;
+    element?: any;
 };
 
 export type FormItemProps = {
-    name: string;
-    label: string;
-    rules: any[];
-    children: React.ReactElement;
+    name?: string;
+    label?: string;
+    rules?: any[];
+    children?: React.ReactElement;
     required?: boolean;
     colon?: boolean;
 };
